@@ -1,0 +1,14 @@
+{
+  "name": "7js_full_stack",
+  "version": "1.0.0",
+  "description": "",
+  "main": "wordleFeedback.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  },
+  "author": "",
+  "license": "ISC"
+}
