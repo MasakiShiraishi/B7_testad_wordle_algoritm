@@ -1,7 +1,7 @@
 const wordleFeedback = require('./wordleFeedback');
 
 describe('wordleFeedback function', () => {
-  test('Inga matchande bokstäver', () => {
+  test('No matching letters', () => {
     expect(wordleFeedback('CYKLA', 'BRUNS')).toEqual([
       { letter: 'C', result: 'incorrect' },
       { letter: 'Y', result: 'incorrect' },
@@ -11,7 +11,7 @@ describe('wordleFeedback function', () => {
     ]);
   });
 
-  test('Alla bokstäver korrekt placerade', () => {
+  test('The same letter several times in the guess but only once in the correct word', () => {
     expect(wordleFeedback('BRUNS', 'BRUNS')).toEqual([
       { letter: 'B', result: 'correct' },
       { letter: 'R', result: 'correct' },
@@ -21,7 +21,7 @@ describe('wordleFeedback function', () => {
     ]);
   });
 
-  test('Blandning av korrekt, felplacerade och inkorrekta bokstäver', () => {
+  test('Mixing correct, misplaced and incorrect letters', () => {
     expect(wordleFeedback('BANAN', 'BRUNS')).toEqual([
       { letter: 'B', result: 'correct' },
       { letter: 'A', result: 'incorrect' },
