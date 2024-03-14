@@ -2,7 +2,7 @@ function wordleFeedback(guess, correctWord) {
   let result = [];
   let correctWordCount = {};
 
-  // Skapa en räknare för varje bokstav i det korrekta ordet
+  // Create a counter for each letter in the correct word
   for (let letter of correctWord) {
     correctWordCount[letter] = (correctWordCount[letter] || 0) + 1;
   }
