@@ -1,0 +1,1 @@
+# B7_testad_wordle_algoritm
