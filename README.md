@@ -1,4 +1,5 @@
 Uppgiften
+
 I denna kurs ska ni bygga ett spel inspirerat av det populära spelet “Wordle”. Det första steget är att skriva den algoritm som utgör de centrala spelreglerna i spelet. Reglerna kan sammanfattas såhär:
 
 Spelet väljer ut ett ord med (vanligtvis) fem bokstäver. Spelaren ska gissa vilket ord det är genom att mata in något ord. Om ordet är korrekt har spelaren vunnit. Om det är fel ord ger spelet feedback som indikerar huruvida några bokstäver i det gissade ordet finns med i det hemliga ordet, och huruvida spelaren placerat dem på rätt plats. Spelaren gissar sedan på nytt.
@@ -35,6 +36,7 @@ A / misplaced
 L / incorrect (eftersom det redan finns ett korrekt L)
 L / correct
 Å / incorrect
+
 Algoritm B – val av ord (frivillig, krävs ej för godkänt)
 Denna funktion är spelets sätt att välja ut ett ord att spela med. Den ska uppfylla följande kriterier:
 
